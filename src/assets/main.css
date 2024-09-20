@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 html {
-    font-size: 20px;
+  font-size: 20px;
+  background-color: #f5f5f5;
+}
+
+p {
+  text-align: justify;
+  margin-top: 0.25rem
 }

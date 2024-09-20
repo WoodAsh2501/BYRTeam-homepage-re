@@ -1,47 +1,44 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+import AboutUs from './components/AboutUs.vue';
+import FirstScreen from './components/FirstScreen.vue';
+import GroupInfo from './components/GroupInfo.vue';
+import HomepageHeader from './components/HomepageHeader.vue';
+import HowtoJoinUs from './components/HowtoJoinUs.vue';
+import MembersTalk from './components/MembersTalk.vue';
+import OurProducts from './components/OurProducts.vue';
+import WhyJoinUs from './components/WhyJoinUs.vue';
+
+export default {
+  components: {
+    HomepageHeader,
+    FirstScreen,
+    AboutUs,
+    OurProducts,
+    GroupInfo,
+    WhyJoinUs,
+    MembersTalk,
+    HowtoJoinUs
+  }
+}
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+    <HomepageHeader />
   </header>
 
   <main>
-    <TheWelcome />
+    <FirstScreen />
+    <div class="mx-auto max-w-[1280px] pt-12 px-4 mt-3 py-3 space-y-8">
+      <AboutUs />
+      <OurProducts />
+      <GroupInfo />
+      <WhyJoinUs />
+      <MembersTalk />
+      <HowtoJoinUs />
+    </div>
   </main>
+
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style></style>
