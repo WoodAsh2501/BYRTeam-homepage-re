@@ -1,5 +1,5 @@
 <script>
-import SectionTitle from './elements/SectionTitle.vue';
+import SectionTitle from './elements/SectionTItle.vue';
 export default {
     components: {
         SectionTitle
