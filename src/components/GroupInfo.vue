@@ -38,8 +38,8 @@ export default {
     <div class="flex flex-col gap-3 rounded-2xl bg-white p-3 lg:flex-row h-min">
         <nav class="rounded-xl bg-[#F5F5F5] p-3 sm:p-3 lg:p-6">
             <GroupButton ref="groupButton0" @click="selectGroup(0)" title="技术组" />
-            <GroupButton ref="groupButton1" @click="selectGroup(1)" title="设计组" />
             <GroupButton ref="groupButton2" @click="selectGroup(2)" title="新媒体组" />
+            <GroupButton ref="groupButton1" @click="selectGroup(1)" title="设计组" />
             <GroupButton ref="groupButton3" @click="selectGroup(3)" title="产品运营组" />
         </nav>
         <main class="relative min-w-0 grow rounded-xl">
