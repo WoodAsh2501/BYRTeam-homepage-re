@@ -27,7 +27,7 @@ export default {
     <HomepageHeader />
   </header>
 
-  <main>
+  <main class="overflow-hidden">
     <FirstScreen />
     <div class="mx-auto max-w-[1280px] pt-12 px-4 mt-3 py-3 space-y-8">
       <AboutUs />
