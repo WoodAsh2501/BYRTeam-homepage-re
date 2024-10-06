@@ -10,7 +10,7 @@ export default {
 <template>
     <div>
         <SectionTitle title="关于BYR-Team" />
-        <div class="mt-3 space-y-4 px-6 py-3">
+        <div class="mt-3 space-y-4 px-6 py-3 text-justify">
             <p>
                 北邮人团队是一个充满活力和创意的大家庭，北邮人团队由技术、设计、产品和新媒体4个大组组成，汇集着来自各个专业背景的优秀学子。在这里，你将有机会结识志同道合的朋友，分享彼此的想法，一起成长。每个组都有不同的分工和任务，每个组也都有各自的特色和风格。无论你是技术控，还是气氛组，是爱热闹，还是享受奋斗，你都能在北邮人团队找到你大展宏图的地方。
             </p>

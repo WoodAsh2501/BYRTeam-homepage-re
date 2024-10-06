@@ -1,4 +1,5 @@
 import './assets/main.css'
+import SVGInjectInstance from '@iconfu/svg-inject'
 
 import { createApp } from 'vue'
 import App from './App.vue'

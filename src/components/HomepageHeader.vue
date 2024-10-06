@@ -1,8 +1,15 @@
+<script>
+export default {
+    props: ["scrollIntoMain"]
+}
+</script>
+
 <template>
-    <div class="fixed">
+    <div class="fixed z-50 text-white"
+    :class="{'glassMorphismHeader': this.scrollIntoMain}">
         <div class="flex sticky top-0 w-screen px-12 py-3 items-center justify-between transition duration-500">
             <a>
-                <img src="../assets/logo.svg" alt="Vue logo" />
+                <img src="../assets/logo.svg" onload="SVGInject(this)"/>
             </a>
             <div class="flex gap-10">
                 <a>北邮人论坛</a>
@@ -13,4 +20,8 @@
     </div>
 </template>
 
-<style></style>
+<style scoped>
+    .glassMorphismHeader {
+        @apply text-[#333] backdrop-blur-sm border-b border-white/50 bg-white/50;
+    }
+</style>

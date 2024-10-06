@@ -19,7 +19,7 @@ export default {
 }
 </script>
 <template>
-    <button class="flex rounded-full w-16 h-16 items-center"
+    <button class="flex rounded-full w-16 h-16 items-center shadow-md"
         @mouseover="() => (this.isHover = this.clickable ? true : false)" @mouseleave="() => (this.isHover = false)"
         :class="colorArray[0]">
         <svg class="m-auto rotate-180" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none"

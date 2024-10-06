@@ -1,24 +1,26 @@
 <script>
 import MyMsg from './MyMsg.vue';
 import ReceivedMsg from './ReceivedMsg.vue';
+import Highlight from '../elements/Highlight.vue';
 export default {
     components: {
         MyMsg,
-        ReceivedMsg
+        ReceivedMsg,
+        Highlight
     }
 
 }
 </script>
 
 <template>
-    <div class="absolute w-full max-h-full overflow-y-scroll rounded-xl border-[0.5px] bg-[#F6F8FC]">
+    <div class="relative flex flex-col w-full h-full rounded-xl border-[0.5px] overflow-hidden bg-[#F6F8FC]">
         <header
             class="sticky top-0 z-10 bg-[#F6F8FC] flex h-[75px] items-center justify-between border-b-[0.5px] px-4 text-[#333] max-sm:py-2 sm:py-4">
             <div class=" text-2xl leading-[180%] tracking-[4.8px]">
                 🎉招新啦🎉
             </div>
         </header>
-        <section class="flex flex-col gap-5 my-5 h-fill overflow-hidden">
+        <section class="flex flex-col gap-5 py-5 h-full overflow-y-scroll" style="scrollbar-width: thin;">
             <MyMsg time="05:04 PM" id="You" avatar="src/assets/groupInfo/avatar1.svg">
                 <span class="myMsg">新媒体组好酷啊！好想加！！❤</span>
             </MyMsg>
@@ -40,85 +42,17 @@ export default {
                 </span>
                 <span class="receiveMsg">
                     <div
-                        class="flex justify-between max-sm:flex-col [&amp;>div]:flex [&amp;>div]:flex-col [&amp;>div]:gap-[2px]">
+                        class="flex justify-between max-sm:flex-col gap-4 [&_a]:underline">
                         <div>
-                            <div class="relative block w-fit">
-                                <div
-                                    class="absolute bottom-0 box-content h-3/5 w-full pr-8 bg-gradient-to-r from-[#DAFF47] to-[#D9D9D900] opacity-40">
-                                </div>
-                                <div
-                                    class="relative whitespace-nowrap text-center leading-[180%] max-sm:text-base sm:text-xl">
-                                    #春日邮啊邮：</div>
-                            </div>
-                            <div class="flex items-start gap-1"><a
-                                    class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                                    href="https://mp.weixin.qq.com/s/vI0UQ144QMib4nX00E_mNw" rel="noreferrer noopener"
-                                    target="_blank">藏在北三环里的小众宝藏打卡地 </a><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="25" fill="none" viewBox="0 0 24 25">
-
-                                    <defs>
-                                        <clipPath id="clip0_496_4187">
-                                            <path fill="#fff" d="M0 .104h24v24H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></div>
-                            <div class="flex items-start gap-1"><a
-                                    class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                                    href="https://mp.weixin.qq.com/s/ADSExMLzODeZxSbGP_Lg2Q" rel="noreferrer noopener"
-                                    target="_blank">北六环约会圣地，城区40min可达 </a><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="24" height="25" fill="none" viewBox="0 0 24 25">
-
-                                    <defs>
-                                        <clipPath id="clip0_496_4187">
-                                            <path fill="#fff" d="M0 .104h24v24H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></div>
-                            <div class="flex items-start gap-1"><a
-                                    class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                                    href="https://mp.weixin.qq.com/s/lC57Iya44k2g7KoiVcjtMw" rel="noreferrer noopener"
-                                    target="_blank">春日邮花图鉴</a><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="25" fill="none" viewBox="0 0 24 25">
-                                    <defs>
-                                        <clipPath id="clip0_496_4187">
-                                            <path fill="#fff" d="M0 .104h24v24H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></div>
+                            <Highlight>#春日邮啊邮</Highlight>
+                            <div class="flex items-start gap-1"><a>藏在北三环里的小众宝藏打卡地 </a></div>
+                            <div class="flex items-start gap-1"><a>北六环约会圣地，城区40min可达 </a></div>
+                            <div class="flex items-start gap-1"><a>春日邮花图鉴</a></div>
                         </div>
                         <div>
-                            <div class="relative block w-fit">
-                                <div
-                                    class="absolute bottom-0 box-content h-3/5 w-full pr-8 bg-gradient-to-r from-[#DAFF47] to-[#D9D9D900] opacity-40">
-                                </div>
-                                <div
-                                    class="relative whitespace-nowrap text-center leading-[180%] max-sm:text-base sm:text-xl">
-                                    #北邮爱情故事：</div>
-                            </div>
-                            <div class="flex items-start gap-1"><a
-                                    class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                                    href="https://mp.weixin.qq.com/s/Fg4ETkdX0Z1qlUBazAE7DA" rel="noreferrer noopener"
-                                    target="_blank">BYR七夕不规则访谈</a><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="25" fill="none" viewBox="0 0 24 25">
-
-                                    <defs>
-                                        <clipPath id="clip0_496_4187">
-                                            <path fill="#fff" d="M0 .104h24v24H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></div>
-                            <div class="flex items-start gap-1"><a
-                                    class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                                    href="https://mp.weixin.qq.com/s/oGQ9BGFT-Lt0YjMN4RoVGg" rel="noreferrer noopener"
-                                    target="_blank">BYR520约会方式一览 </a><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="25" fill="none" viewBox="0 0 24 25">
-
-                                    <defs>
-                                        <clipPath id="clip0_496_4187">
-                                            <path fill="#fff" d="M0 .104h24v24H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg></div>
+                            <Highlight>#北邮爱情故事：</Highlight>
+                            <div class="flex items-start gap-1"><a>BYR七夕不规则访谈</a></div>
+                            <div class="flex items-start gap-1"><a>BYR520约会方式一览 </a></div>
                         </div>
                     </div>
                 </span>
@@ -134,14 +68,10 @@ export default {
                 </span>
                 <span class="receiveMsg">
                     <p>
-                        <a class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                            href="https://mp.weixin.qq.com/s/SPhbDiPZIETY8QqiC4rwSw" rel="noreferrer noopener"
-                            target="_blank">世界破破烂烂，小动物缝缝补补</a>
+                        <a>世界破破烂烂，小动物缝缝补补</a>
                     </p>
                     <p>
-                        <a class="leading-[180%] underline max-sm:text-sm sm:text-lg"
-                            href="https://mp.weixin.qq.com/s/HCklNWP5T37ukMYtgPVYpg" rel="noreferrer noopener"
-                            target="_blank">超能力与副作用的化学反应</a>
+                        <a>超能力与副作用的化学反应</a>
                     </p>
                 </span>
             </ReceivedMsg>
@@ -156,13 +86,18 @@ export default {
                 <input
                     class="min-w-0 bg-transparent py-[3px] outline-none placeholder:tracking-[2.16px] max-sm:shrink max-sm:px-4 sm:grow sm:px-7"
                     placeholder="请输入..." type="text">
-                <div
-                    class="flex justify-between gap-7 ">
-                    <img src="/src/assets/groupInfo/emoji.svg"/>
+                <div class="flex justify-between gap-7 ">
+                    <img src="/src/assets/groupInfo/emoji.svg" />
                     <img src="/src/assets/groupInfo/image.svg" />
                     <img src="/src/assets/groupInfo/location.svg" />
-                    </div>
+                </div>
             </div>
         </footer>
     </div>
 </template>
+
+<style>
+/* ::-webkit-scrollbar {
+    width: 0.5rem;
+} */
+</style>

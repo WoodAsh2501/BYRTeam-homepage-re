@@ -30,7 +30,7 @@ export default {
 
 <template>
     <SectionTitle title="我们的产品" />
-    <div class="flex items-center justify-around">
+    <div class="flex items-center justify-around h-[100px]">
         <ProductButton ref="productButton0" @click="switchSelected(0)" icon="src/assets/products/byrbbs.png" />
         <ProductButton ref="productButton1" @click="switchSelected(1)" icon="src/assets/products/dekt.png" />
         <ProductButton ref="productButton2" @click="switchSelected(2)" icon="src/assets/products/neticu.png" />

@@ -5,9 +5,9 @@ export default {
 </script>
 
 <template>
-    <div class=" flex max-w-[344px] flex-col items-center">
+    <div class="flex max-w-[80%] md:max-w-[344px] flex-col items-center md:self-stretch">
         <img :src="img" class="-mb-16 z-10">
-        <div class="flex flex-col gap-6 grow rounded-2xl bg-white text-center  px-12 pb-9 pt-[100px]">
+        <div class="flex flex-col gap-6 grow rounded-2xl bg-white text-center px-8 lg:px-12 pb-9 pt-[100px]">
             <h2 class="text-[28px] text-center">
                 {{ title }}
             </h2>

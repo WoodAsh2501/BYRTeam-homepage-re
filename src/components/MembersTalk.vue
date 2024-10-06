@@ -1,7 +1,8 @@
 <script>
 import SectionTitle from './elements/SectionTItle.vue';
-import Card from './membersTalk/card.vue'
+import Card from './membersTalk/Card.vue'
 import SelectButton from './membersTalk/SelectButton.vue';
+import Highlight from './elements/Highlight.vue';
 export default {
     data() {
         return {
@@ -11,7 +12,8 @@ export default {
     components: {
         SectionTitle,
         Card,
-        SelectButton
+        SelectButton,
+        Highlight
     },
     methods: {
         next() {
@@ -33,6 +35,10 @@ export default {
 
 <template>
     <SectionTitle title="学长学姐说" />
+    <div class="w-full h-fit">
+        <div class="absolute w-screen left-1/2 -translate-x-1/2 h-[520px] z-10"
+        style="background: linear-gradient(to right, #f5f5f5 0%, rgb(250 250 250 / 0) 33%,rgb(250 250 250 / 0) 67%, #f5f5f5 100%)">
+        </div>
         <div class="flex w-fit relative" :style="{ left: offset }" style="transition: left 0.4s ease">
             <Card img="/src/assets/membersTalk/blue.svg">
                 <template #name>
@@ -43,12 +49,12 @@ export default {
                 </template>
                 <template #achievements>
                     <div class="flex gap-2">
-                        <span>北邮摸鱼硕士</span>
+                        <Highlight>北邮摸鱼硕士</Highlight>
                         <span>大厂实习</span>
                     </div>
                     <div class="flex gap-2">
                         <span>救火队长</span>
-                        <span>各类竞赛奖项</span>
+                        <Highlight>各类竞赛奖项</Highlight>
                     </div>
                 </template>
                 <template #content>
@@ -64,9 +70,9 @@ export default {
                     17级-数字媒体设计学院
                 </template>
                 <template #achievements>
-                    <span>北邮人产品设计新媒体前负责人</span>
+                    <Highlight>北邮人产品设计新媒体前负责人</Highlight>
                     <span>活力研究生</span>
-                    <span>退休老干部(除了技术啥都干)</span>
+                    <Highlight>退休老干部(除了技术啥都干)</Highlight>
                 </template>
                 <template #content>
                     BYR
@@ -84,9 +90,10 @@ export default {
                 </template>
                 <template #achievements>
                     <div class="flex gap-2"><span>前技术组划水负责人</span>
-                        <span>中科院在读博士</span>
+                        <Highlight>中科院在读博士</Highlight>
                     </div>
-                    <div class="flex gap-2"><span>初创&大厂实习</span>
+                    <div class="flex gap-2">
+                        <Highlight>初创&大厂实习</Highlight>
                         <span>人工SMT&BGA平台</span>
                     </div>
                 </template>
@@ -104,10 +111,10 @@ export default {
                     21级-网络空间安全学院
                 </template>
                 <template #achievements>
-                    <span>永远年轻的大三学姐^^</span>
+                    <Highlight>永远年轻的大三学姐^^</Highlight>
                     <span>可进可退可盐可甜</span>
-                    <span>除了工科摄影遛狗插花啥都干
-                    </span><span>国奖获得者</span>
+                    <span>除了工科摄影遛狗插花啥都干</span>
+                    <Highlight>国奖获得者</Highlight>
                 </template>
                 <template #content>
                     年级（纪）越大，BYR
@@ -124,12 +131,12 @@ export default {
                 </template>
                 <template #achievements>
                     <div class="flex gap-2">
-                        <span>国奖获得者</span>
+                        <Highlight>国奖获得者</Highlight>
                         <span>支教团美术老师一枚</span>
                     </div>
                     <div class="flex gap-2">
                         <span>德艺双馨</span>
-                        <span>十余项设计竞赛获奖</span>
+                        <Highlight>十余项设计竞赛获奖</Highlight>
                     </div>
                 </template>
                 <template #content>
@@ -146,16 +153,18 @@ export default {
                 </template>
                 <template #achievements>
                     <span>三好学生</span>
-                    <span>智育top1</span>
-                    <span>没有滑板的铲屎官不是好设计师</span>
+                    <Highlight>智育top1</Highlight>
+                    <Highlight>没有滑板的铲屎官不是好设计师</Highlight>
                 </template>
                 <template #content>
                     这里有最自由和包容的土壤，有最可爱和有趣的灵魂。发现问题、设计构思、解决问题。在北邮人，让设计真正的落地，服务更多的人。
                 </template>
             </Card>
         </div>
-        <div class="flex h-fit -mt-40 justify-end gap-4">
-            <SelectButton :clickable="selected != 0" @click="prev"></SelectButton>
-            <SelectButton :clickable="selected != 5" @click="next" class="rotate-180"></SelectButton>
     </div>
-</template> 
+
+    <div class="flex h-fit -mt-40 justify-end gap-4 [&>*]:z-50">
+        <SelectButton :clickable="selected != 0" @click="prev"></SelectButton>
+        <SelectButton :clickable="selected != 5" @click="next" class=" scale-x-[-1]"></SelectButton>
+    </div>
+</template>

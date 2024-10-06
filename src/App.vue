@@ -18,18 +18,31 @@ export default {
     WhyJoinUs,
     MembersTalk,
     HowtoJoinUs
+  },
+  data() {
+    return {
+      scrollIntoMain: false,
+    }
+  },
+  methods: {
+    headerScroll() {
+      this.scrollIntoMain = window.scrollY > window.innerHeight ? true : false
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.headerScroll)
   }
 }
 </script>
 
 <template>
   <header>
-    <HomepageHeader />
+    <HomepageHeader :scrollIntoMain />
   </header>
 
   <main class="overflow-hidden">
     <FirstScreen />
-    <div class="mx-auto max-w-[1280px] pt-12 px-4 mt-3 py-3 space-y-8">
+    <div id="mainDiv" class="mx-auto max-w-[1200px] pt-12 px-6 mt-3 py-3 space-y-8">
       <AboutUs />
       <OurProducts />
       <GroupInfo />
@@ -38,7 +51,28 @@ export default {
       <HowtoJoinUs />
     </div>
   </main>
-
+  <footer class="mt-20 py-6 text-center text-sm text-[#999]">
+    <div>2003 ~ 2024 © 北邮人团队 BYR TEAM</div>
+    <div>Design &amp; Code with <span class="text-[#ff5a79]">❤</span></div>
+  </footer>
 </template>
 
-<style></style>
+<style>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main > *{
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+  animation-fill-mode: both;
+}
+</style>

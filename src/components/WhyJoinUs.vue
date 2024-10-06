@@ -1,5 +1,5 @@
 <script>
-import Card from './aboutUs/card.vue';
+import Card from './whyJoinUs/Card.vue';
 import SectionTitle from './elements/SectionTItle.vue';
 
 export default {
@@ -12,7 +12,7 @@ export default {
 
 <template>
     <SectionTitle title="加入byrTeam的N个理由" />
-    <div class="flex mx-auto w-[96%] justify-between">
+    <div class="flex flex-col items-center md:flex-row mx-auto w-[96%] gap-4 justify-between">
         <Card title="开放自由" img="src/assets/whyJoinUs/1.svg">
                 自由开放的文化氛围让你的声音会被认真聆听，你可以与整个团队的同学进行思想碰撞，点燃创意的火花。在这里，你遇到的不只是学长学姐，更是并肩作战的伙伴。
         </Card>
