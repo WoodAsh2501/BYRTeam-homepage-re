@@ -7,7 +7,7 @@ export default {
         return {
             illu1: new URL("/assets/whyJoinUs/1.svg", import.meta.url),
             illu2: new URL("/assets/whyJoinUs/2.svg", import.meta.url),
-            illu3: new URL("/assets/whyJoinUs/2.svg", import.meta.url),
+            illu3: new URL("/assets/whyJoinUs/3.svg", import.meta.url),
         }
     },
     components: {
