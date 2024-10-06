@@ -1,29 +1,16 @@
 # BYRTeam-homepage-vue
 
-This template should help get you started developing with Vue 3 in Vite.
+使用`vue`复刻 [BYR Team首页](https://team.byrio.work/)（2024 BYR 技术组前端面试项目）
 
-## Recommended IDE Setup
+部署在 **[这里](https://woodash2501.github.io/BYRTeam-homepage-re/)**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+~~没做手机端适配 小元素偷懒不想加了（~~
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+不知道 readme 还写什么 所以以下是交问卷的原话：
+> 静态资源都是f12偷的（然后抄了一部分tailwind的类名
+> 
+> 动画还搞的不是很明白于是只做了一点基础的
+> 
+> 细节和原版不太一样 我按我的习惯调了一点
+> 
+> 最后build的时候发现我这个引入图片的方式好像很有问题 暂且用很丑陋的方式修复了一下 还是要多开发（
