@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 56 56"
+    class="shrink-0 max-sm:h-[36px] max-sm:w-[36px] sm:h-[56px] sm:w-[56px]">
+    <g clip-path="url(#clip0_849_2807)">
+        <mask id="mask0_849_2807" width="56" height="56" x="0" y="0" maskUnits="userSpaceOnUse"
+            style="mask-type: luminance;">
+            <path fill="#fff"
+                d="M55.429 28c0-15.464-12.28-28-27.429-28C12.852 0 .572 12.536.572 28S12.852 56 28 56C43.148 56 55.43 43.464 55.43 28Z"></path>
+        </mask>
+        <g mask="url(#mask0_849_2807)">
+            <path fill="url(#paint0_linear_849_2807)" d="M55.429 0H.572v56h54.857V0Z"></path>
+            <path fill="#9747FF"
+                d="m6.227 36.57 29.587 21.943c4.085 3.03 9.803 2.106 12.771-2.065l21.496-30.203c2.968-4.17 2.063-10.007-2.023-13.037L38.471-8.736c-4.085-3.03-9.802-2.105-12.77 2.065L4.205 23.532C1.237 27.703 2.142 33.54 6.227 36.57Z"></path>
+            <path stroke="#000" stroke-linecap="round" stroke-width="2.222"
+                d="M23.613 22.268c3.188 1.204 6.22.875 9.095-.987"></path>
+            <path fill="#000"
+                d="M22.22 16.148c-.086-.853-.666-1.49-1.295-1.42-.63.068-1.07.815-.983 1.668.086.853.666 1.49 1.296 1.42.629-.068 1.07-.815.983-1.668ZM34.344 14.847c-.086-.853-.666-1.49-1.295-1.42-.63.068-1.07.815-.983 1.668.086.854.666 1.49 1.295 1.421.63-.069 1.07-.816.983-1.669Z"></path>
+        </g>
+    </g>
+    <rect width="55" height="55" x="0.5" y="0.5" stroke="#EAEFF7" rx="27.5"></rect>
+    <defs>
+        <linearGradient id="paint0_linear_849_2807" x1="28" x2="28" y1="0" y2="56"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFE175"></stop>
+            <stop offset="1" stop-color="#FFE175" stop-opacity="0"></stop>
+        </linearGradient>
+        <clipPath id="clip0_849_2807">
+            <rect width="56" height="56" fill="#fff" rx="28"></rect>
+        </clipPath>
+    </defs>
+</svg>
