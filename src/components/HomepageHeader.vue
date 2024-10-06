@@ -9,7 +9,7 @@ export default {
     :class="{'glassMorphismHeader': this.scrollIntoMain}">
         <div class="flex sticky top-0 w-screen px-12 py-3 items-center justify-between transition duration-500">
             <a>
-                <img src="../assets/logo.svg" onload="SVGInject(this)"/>
+                <img src="/assets/logo.svg" onload="SVGInject(this)"/>
             </a>
             <div class="flex gap-10">
                 <a>北邮人论坛</a>

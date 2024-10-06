@@ -21,7 +21,7 @@ export default {
             </div>
         </header>
         <section class="flex flex-col gap-5 py-5 h-full overflow-y-scroll" style="scrollbar-width: thin;">
-            <MyMsg time="05:04 PM" id="You" avatar="src/assets/groupInfo/avatar1.svg">
+            <MyMsg time="05:04 PM" id="You" avatar="/assets/groupInfo/avatar1.svg">
                 <span class="myMsg">新媒体组好酷啊！好想加！！❤</span>
             </MyMsg>
 
@@ -29,7 +29,7 @@ export default {
                 北邮人团队 新媒体组 拍了拍 你，并发送了一条加群邀请
             </div>
 
-            <ReceivedMsg time="05:06 PM" id="新媒体组某不知名成员壹" avatar="src/assets/groupInfo/avatar2.svg">
+            <ReceivedMsg time="05:06 PM" id="新媒体组某不知名成员壹" avatar="/assets/groupInfo/avatar2.svg">
                 <span class="receiveMsg">Hi，欢迎来到有趣灵魂聚集地新媒体组！ 我们是——</span>
                 <span class="receiveMsg">＃生活观察员＃</span>
                 <span class="receiveMsg">
@@ -58,7 +58,7 @@ export default {
                 </span>
             </ReceivedMsg>
 
-            <ReceivedMsg time="05:12 PM" id="新媒体组某不知名成员贰" avatar="src/assets/groupInfo/avatar3.svg">
+            <ReceivedMsg time="05:12 PM" id="新媒体组某不知名成员贰" avatar="/assets/groupInfo/avatar3.svg">
                 <span class="receiveMsg">我们也是——</span>
                 <span class="receiveMsg">＃浪漫的幻想家＃</span>
                 <span class="receiveMsg">
@@ -81,15 +81,15 @@ export default {
                 class="flex items-center justify-between rounded-full bg-[#F6F8FC] text-[#333] max-md:px-6 max-md:py-[6px] md:px-11 md:py-3">
                 <div
                     class="border-r-[2px] max-sm:pr-3 sm:pr-6 [&amp;>svg]:cursor-pointer [&amp;>svg]:max-sm:h-5 [&amp;>svg]:max-sm:w-5">
-                    <img src="/src/assets/groupInfo/link.svg" fill="#fff">
+                    <img src="/assets/groupInfo/link.svg" fill="#fff">
                 </div>
                 <input
                     class="min-w-0 bg-transparent py-[3px] outline-none placeholder:tracking-[2.16px] max-sm:shrink max-sm:px-4 sm:grow sm:px-7"
                     placeholder="请输入..." type="text">
                 <div class="flex justify-between gap-7 ">
-                    <img src="/src/assets/groupInfo/emoji.svg" />
-                    <img src="/src/assets/groupInfo/image.svg" />
-                    <img src="/src/assets/groupInfo/location.svg" />
+                    <img src="/assets/groupInfo/emoji.svg" />
+                    <img src="/assets/groupInfo/image.svg" />
+                    <img src="/assets/groupInfo/location.svg" />
                 </div>
             </div>
         </footer>

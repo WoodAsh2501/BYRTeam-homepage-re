@@ -28,7 +28,7 @@ export default {
             <slot name="content"></slot>
         </span>
         <div class="flex flex-col items-end -my-8 mx-6">
-            <img src="/src/assets/membersTalk/comma.svg" class="w-fit">
+            <img src="/assets/membersTalk/comma.svg" class="w-fit">
         </div>
     </div>
 </template>

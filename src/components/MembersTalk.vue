@@ -40,7 +40,7 @@ export default {
         style="background: linear-gradient(to right, #f5f5f5 0%, rgb(250 250 250 / 0) 33%,rgb(250 250 250 / 0) 67%, #f5f5f5 100%)">
         </div>
         <div class="flex w-fit relative" :style="{ left: offset }" style="transition: left 0.4s ease">
-            <Card img="/src/assets/membersTalk/blue.svg">
+            <Card img="/assets/membersTalk/blue.svg">
                 <template #name>
                     @zekin「技术组」
                 </template>
@@ -62,7 +62,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/src/assets/membersTalk/red.svg">
+            <Card img="/assets/membersTalk/red.svg">
                 <template #name>
                     @+1「新媒体组」
                 </template>
@@ -81,7 +81,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/src/assets/membersTalk/blue.svg">
+            <Card img="/assets/membersTalk/blue.svg">
                 <template #name>
                     @Makiras「技术组」
                 </template>
@@ -103,7 +103,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/src/assets/membersTalk/yellow.svg">
+            <Card img="/assets/membersTalk/yellow.svg">
                 <template #name>
                     @momo「新媒体组」
                 </template>
@@ -122,7 +122,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/src/assets/membersTalk/blue.svg">
+            <Card img="/assets/membersTalk/blue.svg">
                 <template #name>
                     @好圆圆圆「产品组」
                 </template>
@@ -144,7 +144,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/src/assets/membersTalk/red.svg">
+            <Card img="/assets/membersTalk/red.svg">
                 <template #name>
                     @Sprr「设计组」
                 </template>

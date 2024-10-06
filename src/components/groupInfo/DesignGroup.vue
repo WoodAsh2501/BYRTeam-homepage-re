@@ -11,9 +11,9 @@
             <section class="flex flex-col gap-2">
                 <div
                     class="flex flex-wrap items-center gap-1 border-[2px] border-[#0067D1] bg-white/40 p-[10px] justify-center w-fit">
-                    <img src="../../assets/groupInfo/design.svg" fill="none" />
+                    <img src="/assets/groupInfo/design.svg" fill="none" />
                     <div class="flex flex-col items-center gap-[10px] px-[10px]">
-                        <img src="../../assets/groupInfo/planet.svg" fill="none" />
+                        <img src="/assets/groupInfo/planet.svg" fill="none" />
                         <span class="text-4xl ">design=__</span>
                     </div>
                 </div>

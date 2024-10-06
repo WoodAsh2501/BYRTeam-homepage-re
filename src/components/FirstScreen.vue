@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[url('../assets/first-screen-bg.jpg')] bg-cover bg-center w-screen h-screen">
+    <div class="bg-[url('/assets/first-screen-bg.jpg')] bg-cover bg-center w-screen h-screen">
         <div class="flex flex-col gap-6 px-20 pt-28 max-w-[700px] h-screen text-white
         bg-gradient-to-r from-black/40 to-transparent
         ">

@@ -44,7 +44,7 @@
         <p>101011100101000 101001100010111 10010000101</p>
     </div>
     <div class="absolute bottom-0">
-        <img src="/src/assets/groupInfo/techman.svg" alt="">
+        <img src="/assets/groupInfo/techman.svg" alt="">
         <div class="absolute bottom-24  md:block">
             <div class="relative w-fit px-3">
                 <div class="absolute inset-0 -skew-x-6 bg-[#0067D1]"></div><span
