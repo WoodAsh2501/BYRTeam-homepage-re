@@ -7,6 +7,9 @@ export default {
     data() {
         return {
             selected: 0,
+            avatarRed: new URL("/assets/membersTalk/red.svg", import.meta.url),
+            avatarBlue: new URL("/assets/membersTalk/blue.svg", import.meta.url),
+            avatarYellow: new URL("/assets/membersTalk/yellow.svg", import.meta.url),
         }
     },
     components: {
@@ -40,7 +43,7 @@ export default {
         style="background: linear-gradient(to right, #f5f5f5 0%, rgb(250 250 250 / 0) 33%,rgb(250 250 250 / 0) 67%, #f5f5f5 100%)">
         </div>
         <div class="flex w-fit relative" :style="{ left: offset }" style="transition: left 0.4s ease">
-            <Card img="/assets/membersTalk/blue.svg">
+            <Card :img="avatarBlue">
                 <template #name>
                     @zekin「技术组」
                 </template>
@@ -62,7 +65,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/assets/membersTalk/red.svg">
+            <Card :img="avatarRed">
                 <template #name>
                     @+1「新媒体组」
                 </template>
@@ -81,7 +84,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/assets/membersTalk/blue.svg">
+            <Card :img="avatarBlue">
                 <template #name>
                     @Makiras「技术组」
                 </template>
@@ -103,7 +106,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/assets/membersTalk/yellow.svg">
+            <Card :img="avatarYellow">
                 <template #name>
                     @momo「新媒体组」
                 </template>
@@ -122,7 +125,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/assets/membersTalk/blue.svg">
+            <Card :img="avatarBlue">
                 <template #name>
                     @好圆圆圆「产品组」
                 </template>
@@ -144,7 +147,7 @@ export default {
                 </template>
             </Card>
 
-            <Card img="/assets/membersTalk/red.svg">
+            <Card :img="avatarRed">
                 <template #name>
                     @Sprr「设计组」
                 </template>

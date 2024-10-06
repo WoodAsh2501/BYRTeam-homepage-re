@@ -6,7 +6,16 @@ export default {
     data() {
         return {
             selected: 0,
-            introduction: productIntroduction
+            introduction: productIntroduction,
+            iconByrbbs: new URL("/assets/products/byrbbs.png", import.meta.url),
+            iconDekt: new URL("/assets/products/dekt.png", import.meta.url),
+            iconNeticu: new URL("/assets/products/neticu.png", import.meta.url),
+            iconBitwarden: new URL("/assets/products/bitwarden.png", import.meta.url),
+            iconByrio: new URL("/assets/products/byrio.png", import.meta.url),
+            iconGitlab: new URL("/assets/products/gitlab.png", import.meta.url),
+            iconMirrors: new URL("/assets/products/mirrors.png", import.meta.url),
+            iconOverleaf: new URL("/assets/products/overleaf.png", import.meta.url),
+            iconEfficiency: new URL("/assets/products/efficiency.png", import.meta.url),
         }
     },
     mounted() {
@@ -31,15 +40,15 @@ export default {
 <template>
     <SectionTitle title="我们的产品" />
     <div class="flex items-center justify-around h-[100px]">
-        <ProductButton ref="productButton0" @click="switchSelected(0)" icon="/assets/products/byrbbs.png" />
-        <ProductButton ref="productButton1" @click="switchSelected(1)" icon="/assets/products/dekt.png" />
-        <ProductButton ref="productButton2" @click="switchSelected(2)" icon="/assets/products/neticu.png" />
-        <ProductButton ref="productButton3" @click="switchSelected(3)" icon="/assets/products/bitwarden.png" />
-        <ProductButton ref="productButton4" @click="switchSelected(4)" icon="/assets/products/byrio.png" />
-        <ProductButton ref="productButton5" @click="switchSelected(5)" icon="/assets/products/gitlab.png" />
-        <ProductButton ref="productButton6" @click="switchSelected(6)" icon="/assets/products/mirrors.png" />
-        <ProductButton ref="productButton7" @click="switchSelected(7)" icon="/assets/products/overleaf.png" />
-        <ProductButton ref="productButton8" @click="switchSelected(8)" icon="/assets/products/efficiency.png" />
+        <ProductButton ref="productButton0" @click="switchSelected(0)" :icon="iconByrbbs" />
+        <ProductButton ref="productButton1" @click="switchSelected(1)" :icon="iconDekt" />
+        <ProductButton ref="productButton2" @click="switchSelected(2)" :icon="iconNeticu" />
+        <ProductButton ref="productButton3" @click="switchSelected(3)" :icon="iconBitwarden" />
+        <ProductButton ref="productButton4" @click="switchSelected(4)" :icon="iconByrio" />
+        <ProductButton ref="productButton5" @click="switchSelected(5)" :icon="iconGitlab" />
+        <ProductButton ref="productButton6" @click="switchSelected(6)" :icon="iconMirrors" />
+        <ProductButton ref="productButton7" @click="switchSelected(7)" :icon="iconOverleaf" />
+        <ProductButton ref="productButton8" @click="switchSelected(8)" :icon="iconEfficiency" />
     </div>
     <div class="rounded-[18px] bg-white px-6 py-4">
         <div class="flex flex-col gap-2">

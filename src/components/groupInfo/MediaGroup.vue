@@ -3,6 +3,13 @@ import MyMsg from './MyMsg.vue';
 import ReceivedMsg from './ReceivedMsg.vue';
 import Highlight from '../elements/Highlight.vue';
 export default {
+    data() {
+        return {
+            avatar1: new URL("/assets/groupInfo/avatar1.svg", import.meta.url),
+            avatar2: new URL("/assets/groupInfo/avatar2.svg", import.meta.url),
+            avatar3: new URL("/assets/groupInfo/avatar3.svg", import.meta.url),
+        }
+    },
     components: {
         MyMsg,
         ReceivedMsg,
@@ -21,7 +28,7 @@ export default {
             </div>
         </header>
         <section class="flex flex-col gap-5 py-5 h-full overflow-y-scroll" style="scrollbar-width: thin;">
-            <MyMsg time="05:04 PM" id="You" avatar="/assets/groupInfo/avatar1.svg">
+            <MyMsg time="05:04 PM" id="You" :avatar="avatar1">
                 <span class="myMsg">新媒体组好酷啊！好想加！！❤</span>
             </MyMsg>
 
@@ -29,7 +36,7 @@ export default {
                 北邮人团队 新媒体组 拍了拍 你，并发送了一条加群邀请
             </div>
 
-            <ReceivedMsg time="05:06 PM" id="新媒体组某不知名成员壹" avatar="/assets/groupInfo/avatar2.svg">
+            <ReceivedMsg time="05:06 PM" id="新媒体组某不知名成员壹" :avatar="avatar2">
                 <span class="receiveMsg">Hi，欢迎来到有趣灵魂聚集地新媒体组！ 我们是——</span>
                 <span class="receiveMsg">＃生活观察员＃</span>
                 <span class="receiveMsg">
@@ -58,7 +65,7 @@ export default {
                 </span>
             </ReceivedMsg>
 
-            <ReceivedMsg time="05:12 PM" id="新媒体组某不知名成员贰" avatar="/assets/groupInfo/avatar3.svg">
+            <ReceivedMsg time="05:12 PM" id="新媒体组某不知名成员贰" :avatar="avatar3">
                 <span class="receiveMsg">我们也是——</span>
                 <span class="receiveMsg">＃浪漫的幻想家＃</span>
                 <span class="receiveMsg">
